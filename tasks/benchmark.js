@@ -1,0 +1,70 @@
+
+/* IMPORT */
+
+const {default: random} = require ( '../dist/node' );
+const benchmark = require ( 'benchloop' );
+
+/* MAIN */
+
+benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
+  iterations: 100000,
+  log: 'compact'
+});
+
+benchmark ({
+  name: 'random:1',
+  fn: () => {
+    random ( 1 );
+  }
+});
+
+benchmark ({
+  name: 'random:2',
+  fn: () => {
+    random ( 2 );
+  }
+});
+
+benchmark ({
+  name: 'random:4',
+  fn: () => {
+    random ( 4 );
+  }
+});
+
+benchmark ({
+  name: 'random:8',
+  fn: () => {
+    random ( 8 );
+  }
+});
+
+benchmark ({
+  name: 'random:16',
+  fn: () => {
+    random ( 16 );
+  }
+});
+
+benchmark ({
+  name: 'random:32',
+  fn: () => {
+    random ( 32 );
+  }
+});
+
+benchmark ({
+  name: 'random:64',
+  fn: () => {
+    random ( 64 );
+  }
+});
+
+benchmark ({
+  name: 'random:128',
+  fn: () => {
+    random ( 128 );
+  }
+});
+
+benchmark.summary ();
