@@ -2,7 +2,7 @@
   "name": "crypto-random-uint8",
   "repository": "github:fabiospampinato/crypto-random-uint8",
   "description": "Generate a cryptographically-random Uint8Array with the given number of bytes of entropy.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
