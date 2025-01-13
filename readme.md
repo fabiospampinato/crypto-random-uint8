@@ -5,13 +5,15 @@ Generate a cryptographically-random Uint8Array with the given number of bytes of
 ## Install
 
 ```sh
-npm install --save crypto-random-uint8
+npm install crypto-random-uint8
 ```
 
 ## Usage
 
 ```ts
 import random from 'crypto-random-uint8';
+
+// Let's get some random Uint8Arrays
 
 random ( 8 ); // => <Uint8Array(8) 171, 2, 177, 127, 226, 149, 102, 130>
 random ( 16 ); // => <Uint8Array(16) 158, 153, 84, 135, 102, 48, 148, 135, 117, 74, 236, 216, 240, 239, 6, 30>
